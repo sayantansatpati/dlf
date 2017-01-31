@@ -19,7 +19,7 @@ weights = np.random.normal(scale=1 / n_features**.5, size=n_features)
 
 # Neural Network hyperparameters
 epochs = 1000
-learnrate = 0.00005
+learnrate = 0.5
 
 for e in range(epochs):
     del_w = np.zeros(weights.shape)
@@ -29,7 +29,7 @@ for e in range(epochs):
         #print(y,x)
 
         # TODO: Calculate the output
-        output = sigmoid(np.dot(x,del_w))
+        output = sigmoid(np.dot(x,weights))
 
         # TODO: Calculate the error
         error = y - output
