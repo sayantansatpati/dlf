@@ -21,6 +21,14 @@ weights_input_hidden = np.array([[0.5, -0.6],
 
 weights_hidden_output = np.array([0.1, -0.3])
 
+'''
+O
+    O
+O       O
+    O
+O
+'''
+
 ## Forward pass
 hidden_layer_input = np.dot(x, weights_input_hidden)
 hidden_layer_output = sigmoid(hidden_layer_input)
