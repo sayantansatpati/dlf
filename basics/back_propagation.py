@@ -12,8 +12,8 @@ x = np.array([0.5, 0.1, -0.2])
 target = 0.6
 learnrate = 0.5
 
-print("x\n", x)
-print("x[:, None] OR x[:, np.newaxis]\n", x[:, np.newaxis])
+print("# x\n", x, x.shape)
+print("# x[:, None] OR x[:, np.newaxis]\n", x[:, np.newaxis], x[:, np.newaxis].shape)
 
 weights_input_hidden = np.array([[0.5, -0.6],
                                  [0.1, -0.2],
@@ -39,7 +39,7 @@ output = sigmoid(output_layer_in)
 ## Backwards pass
 ## TODO: Calculate error
 error = target - output
-print("# error\n", error)
+print("\n# error\n", error)
 
 # TODO: Calculate error gradient for output layer
 del_err_output = error * output * (1-output)
