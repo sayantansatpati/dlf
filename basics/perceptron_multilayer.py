@@ -14,10 +14,12 @@ N_output = 2
 np.random.seed(42)
 # Make some fake data
 X = np.random.randn(4)
-print(X,X.shape)
+print('X:\n',X,X.shape)
 
 weights_in_hidden = np.random.normal(0, scale=0.1, size=(N_input, N_hidden))
+print('weights_in_hidden:\n',weights_in_hidden,weights_in_hidden.shape)
 weights_hidden_out = np.random.normal(0, scale=0.1, size=(N_hidden, N_output))
+print('weights_hidden_out:\n',weights_hidden_out,weights_hidden_out.shape)
 
 
 # TODO: Make a forward pass through the network
