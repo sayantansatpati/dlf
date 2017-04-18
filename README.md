@@ -1,5 +1,7 @@
 # Deep Learning
-### Used for completing all assignments and projects from Udacity projects Deep Learning Foundation Nanodegree
+#### Used for assignments, projects, and different DL projects from Udacity projects Deep Learning Foundation Nanodegree
+
+
 
 
 
